@@ -1,0 +1,21 @@
+.profile{
+width: 250px;
+margin: 0 auto;
+margin-top: 100px;
+border: aqua;
+width: 300px;
+background-color: aqua;
+
+
+}
+
+.avatar{
+    width: 110px;
+    height: 110px;
+    
+}
+
+/* .description{
+    display: flex;
+    align-items: center;
+} */
