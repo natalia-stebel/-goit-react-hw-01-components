@@ -2,6 +2,9 @@ import css from "./Statistics.module.css"
 
 import PropTypes from 'prop-types';
 
+const getRandomHexColor = () =>
+  `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
 export const Statistics = ({ title, stats })  =>{
     return (
       <section className={css.statistics}>
@@ -13,7 +16,7 @@ export const Statistics = ({ title, stats })  =>{
               <li
                 className={css.item}
                 key={id}
-                
+                style={{backgroundColor: getRandomHexColor() }}
               >
                 <span className={css.label}>{label}</span>
                 <span className={css.percentage}>{percentage}%</span>

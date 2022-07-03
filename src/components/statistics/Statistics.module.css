@@ -1,0 +1,27 @@
+.statistics{
+ 
+}
+
+.title{
+
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700px;
+}
+
+.statlist {
+    list-style: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   align-items: center;
+   text-align: center;
+   
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
