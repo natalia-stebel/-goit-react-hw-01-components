@@ -1,6 +1,6 @@
 
 
-import {FriendsListContainer, FriendStatus, FriendAvatar, FriendName, Online, Offline } from "components/FriendsList/FriendsList.styled"
+import {FriendsListContainer, FriendStatus, Avatar, Name, Online, Offline } from "components/FriendsList/FriendsList.styled"
 
 import PropTypes from 'prop-types';
 
@@ -10,10 +10,10 @@ export const FriendsList = ({ friends }) =>{
           {friends.map(friend => {
             return (
               <FriendStatus key={friend.id}>
-                {friend.isOnline ? <Online /> : <Offline/>}
+                 {friend.isOnline ? <Online /> : <Offline />}
     
-                <FriendAvatar src={friend.avatar} alt={friend.name} width="48" />
-                <FriendName>{friend.name}</FriendName>
+                <Avatar src={friend.avatar} alt={friend.name} width="48" />
+                <Name>{friend.name}</Name>
               </FriendStatus>
             );
           })}

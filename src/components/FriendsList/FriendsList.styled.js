@@ -33,10 +33,10 @@ export const Offline = styled.span`
   height: 15px;
 `;
 
-export const FriendName = styled.p`
+export const Name = styled.p`
     
 `;
 
-export const FriendAvatar = styled.img`
+export const Avatar = styled.img`
     
 `;
