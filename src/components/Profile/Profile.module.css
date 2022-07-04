@@ -1,3 +1,7 @@
+body{
+    background: rgb(34,193,195);
+background: radial-gradient(circle, rgba(34,193,195,0.1516981792717087) 0%, rgba(253,187,45,0.19931722689075626) 100%);}
+
 .profile{
 
 width: 200px;
@@ -18,7 +22,8 @@ box-shadow: 5px 5px 10px rgb(172, 169, 169);
     height: 110px;
     border-radius: 50%;
     margin-top: 10px;
-
+    margin-bottom: 5px;
+border: 1px solid rgb(224, 221, 221);
  
     
 }
@@ -63,6 +68,7 @@ box-shadow: 5px 5px 10px rgb(172, 169, 169);
 font-size: 20px;
 font-weight: 700;
 margin-bottom: 0;
+margin-top: 0;
     }
 
 
@@ -73,4 +79,5 @@ margin-bottom: 0;
 
     .location{
         color: gray;
+        margin-top: 0;
     }
