@@ -5,7 +5,7 @@ import statistics from "./data/statistics"
 import { Statistics} from "components/statistics/Statistics";
 
 import friends from './data/friends';
-import { FriendsList } from "components/FriendsList/FriendsList";
+import {FriendsList}  from "./FriendsList/FriendsList";
 
 import transactions from "./data/transactions"
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";

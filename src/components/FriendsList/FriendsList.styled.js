@@ -49,3 +49,7 @@ export const Name = styled.p`
 export const Avatar = styled.img`
     
 `;
+
+export const FriendsList = styled.img`
+    
+`;

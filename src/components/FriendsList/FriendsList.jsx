@@ -1,27 +1,27 @@
 
 
-import {FriendsListContainer, FriendStatus, Avatar, Name, Online, Offline } from "components/FriendsList/FriendsList.styled"
+import {FriendsListContainer} from "components/FriendsList/FriendsList.styled"
 
 import PropTypes from 'prop-types';
+
+import FriendsListItem from "components/FriendsList/FriendsListItem";
+
 
 export const FriendsList = ({ friends }) =>{
     return (
         <FriendsListContainer>
-          {friends.map(friend => {
-            return (
-              <FriendStatus key={friend.id}>
-                 {friend.isOnline ? <Online /> : <Offline />}
-    
-                <Avatar src={friend.avatar} alt={friend.name} width="48" />
-                <Name>{friend.name}</Name>
-              </FriendStatus>
-            );
-          })}
+          {friends.map((friend) => (
+                <FriendsListItem
+                    key={friend.id}
+                    isOnline={friend.isOnline}
+                    avatar={friend.avatar}
+                    name={friend.name}
+                />
+            ))}
         </FriendsListContainer>
-      );
-    }
-
-
+    )
+        };
+    
 
 FriendsList.propTypes = {
     friends: PropTypes.arrayOf(
@@ -33,3 +33,5 @@ FriendsList.propTypes = {
       })
     ),
   };
+
+  
